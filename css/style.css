@@ -324,7 +324,7 @@ header.site-header.sticky {
 /*footer-css-end*/
 /*privacy-policy start*/
 .privacy__section.banner {
-  background-image: url(../);
+  background-image: url(../images/privacybanner.webp);
   text-align: center;
   position: relative;
   background-position: center;
@@ -355,7 +355,7 @@ header.site-header.sticky {
 /*privacy-policy end*/
 /*terms-conditon start*/
 .terms__section.banner {
-  background-image: url(../);
+  background-image: url(../images/termsbanner.jpg);
   text-align: center;
   position: relative;
   background-position: center;
