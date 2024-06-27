@@ -121,7 +121,7 @@ h3 {
   }
   .footer-links ul {
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -263,6 +263,9 @@ h3 {
   .casino-btn {
     align-items: start;
   }
+  .casino-address h3 {
+    margin: 10px 0;
+  }
 }
 @media screen and (max-width: 767px) {
   figure {
@@ -275,6 +278,10 @@ h3 {
   }
   .accordion-button {
     font-size: 15px;
+  }
+  .casino-btn a {
+    font-size: 16px;
+    padding: 10px 10px;
   }
 }
 
