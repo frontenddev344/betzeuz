@@ -1,0 +1,104 @@
+@import './variables';
+@import './mixins';
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    font-family: "Work Sans", sans-serif;
+}
+
+.primary-btn {
+    background: $clr-orange;
+    border: 1px solid $clr-orange;
+    display: inline-block;
+    padding: 10px 21px;
+    border-radius: 20px;
+
+    a {
+        color: $clr-black;
+
+    }
+
+    &:hover {
+        background-color: $clr-black;
+        border: 1px solid $clr-black;
+
+        a {
+            color: $clr-white;
+        }
+    }
+}
+
+.banner {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 0;
+    height: 500px;
+}
+
+.bannertitle {
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: $clr-grey;
+    font-family: "Work Sans", sans-serif;
+
+    @include mq(md) {
+        font-size: 14px;
+    }
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: $clr-white;
+    text-align: center;
+
+    @include mq(md) {
+        font-size: 42px;
+    }
+}
+
+h2 {
+    font-size: 45px;
+    line-height: normal;
+    font-weight: 500;
+    color: $clr-orange;
+    text-align: center;
+
+    @include mq(md) {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-size: 22px;
+    line-height: normal;
+    font-weight: 500;
+
+    @include mq(md) {
+        font-size: 17px;
+    }
+}
